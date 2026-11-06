@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全国 中古車販売店ランキング｜47都道府県別おすすめ店ガイド</title>
+<meta name="description" content="全国47都道府県の中古車販売店ランキングへの入口。Google評価と口コミで厳選した各都道府県のおすすめ中古車販売店を紹介。">
+<link rel="canonical" href="https://tk-ramen.github.io/japan-usedcar-ranking/">
+<meta property="og:title" content="全国 中古車販売店ランキング｜47都道府県別">
+<meta property="og:description" content="Google評価と口コミで厳選した、都道府県別の中古車販売店ランキング。">
+<meta property="og:type" content="website"><meta property="og:url" content="https://tk-ramen.github.io/japan-usedcar-ranking/">
+<meta name="google-site-verification" content="_zaugY5vbILDGWWC51dp0OhpVQRzd4vD6KLH1J2lWqs">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0b0e13;--panel:#131824;--panel2:#1a2130;--line:#2a3347;--txt:#eef2f7;--mut:#9fb0c3;--acc:#ff4b1f;--acc2:#ffb03a}
+body{background:var(--bg);color:var(--txt);font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.7}
+a{color:var(--acc2)}
+.hero{position:relative;min-height:68vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.55)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,14,19,.15),rgba(11,14,19,.92) 78%),linear-gradient(100deg,rgba(255,75,31,.28),transparent 55%)}
+.hero .in{position:relative;z-index:2;width:min(1120px,92vw);margin:0 auto;padding:56px 0 44px}
+.kicker{display:inline-block;background:var(--acc);color:#fff;font-weight:800;letter-spacing:.14em;padding:4px 14px;transform:skewX(-12deg);font-size:.82rem}
+h1{font-size:clamp(2rem,6vw,3.6rem);font-weight:900;font-style:italic;letter-spacing:.02em;line-height:1.15;margin:16px 0 10px;text-shadow:0 4px 24px rgba(0,0,0,.6)}
+h1 .n{color:var(--acc2)}
+.hero p{color:#d7e0ec;max-width:640px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.stat{background:rgba(19,24,36,.85);border:1px solid var(--line);border-left:4px solid var(--acc);padding:10px 18px}
+.stat b{font-size:1.35rem;font-style:italic}.stat span{display:block;color:var(--mut);font-size:.78rem}
+.wrap{width:min(1120px,92vw);margin:0 auto;padding:34px 0 10px}
+h2{font-size:1.5rem;font-weight:900;font-style:italic;margin:38px 0 6px;border-left:6px solid var(--acc);padding-left:12px}
+.sub{color:var(--mut);margin-bottom:16px}
+table{width:100%;border-collapse:collapse;background:var(--panel);font-size:.92rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+th{background:var(--panel2)}
+td:first-child{font-weight:900;font-style:italic;color:var(--acc2)}
+.ctrl{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 20px}
+button.chip{background:var(--panel);color:var(--txt);border:1px solid var(--line);padding:8px 16px;border-radius:999px;cursor:pointer;font-size:.9rem}
+button.chip.on{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card .ph{position:relative;height:180px}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(11,14,19,.75))}
+.rank{position:absolute;top:10px;left:12px;z-index:2;font-size:2rem;font-weight:900;font-style:italic;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.8)}
+.crown{position:absolute;top:14px;left:64px;z-index:2;background:linear-gradient(90deg,var(--acc),var(--acc2));color:#fff;font-weight:900;padding:2px 10px;transform:skewX(-12deg);font-size:.8rem}
+.area{position:absolute;bottom:8px;left:12px;z-index:2;color:#dfe7f2;font-size:.8rem;font-weight:700}
+.card .body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.12rem;font-weight:800}
+.score{display:flex;align-items:center;gap:8px}
+.stars{color:var(--acc2);letter-spacing:.06em}
+.score b{font-size:1.15rem}
+.rev{color:var(--mut);font-size:.85rem}
+.point{color:#cdd8e6;font-size:.92rem;flex:1}
+.addr,.hrs{color:var(--mut);font-size:.82rem}
+.btn{display:inline-block;margin-top:6px;background:linear-gradient(90deg,var(--acc),#ff7a1f);color:#fff;text-decoration:none;font-weight:800;padding:9px 16px;border-radius:8px;text-align:center}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.tile{position:relative;border-radius:12px;overflow:hidden;min-height:170px;display:flex;align-items:flex-end}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.6)}
+.tile div{position:relative;z-index:2;padding:14px}
+.tile b{font-size:1.05rem}.tile p{color:#d7e0ec;font-size:.85rem}
+.checks{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.checks li{margin:6px 0 6px 20px}
+.faq{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:8px 0}
+.faq summary{cursor:pointer;font-weight:700}
+.faq p{color:#cdd8e6;margin-top:8px}
+.note{color:var(--mut);font-size:.82rem;margin-top:26px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:26px 0 40px;color:var(--mut);font-size:.85rem}
+footer .wrap{padding:0}
+.adbar{background:#05070a;text-align:center;padding:12px 8px 10px;border-bottom:3px solid var(--acc)}
+.adbar .pr{display:inline-block;background:var(--acc);color:#fff;font-size:.68rem;font-weight:800;padding:1px 8px;margin-bottom:6px;letter-spacing:.2em}
+.adbar img{max-width:100%;height:auto}
+.prsec{display:flex;gap:16px;flex-wrap:wrap}
+.pritem{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;flex:1 1 300px;text-align:center}
+.pritem img{max-width:100%;height:auto}
+.pritem p{color:#cdd8e6;font-size:.88rem;text-align:left;margin-top:10px}
+.prtag{display:inline-block;border:1px solid var(--acc2);color:var(--acc2);font-size:.7rem;font-weight:800;padding:1px 8px;margin-bottom:8px;letter-spacing:.15em}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:8px}
+.pcard{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;text-decoration:none}
+.pcard b{display:block;font-size:1.15rem;color:var(--txt)}
+.pcard span{color:var(--mut);font-size:.82rem}
+.pcard:hover{border-color:var(--acc)}
+</style><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-98HLDT9E0R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-98HLDT9E0R');
+</script>
+</head><body>
+<div class="adbar"><span class="pr">PR</span><br><a href="https://px.a8.net/svt/ejp?a8mat=4BGAV1+DXEHWQ+5IMU+60WN5" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www28.a8.net/svt/bgt?aid=261101053842&wid=164&eno=01&mid=s00000025743001012000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BGAV1+DXEHWQ+5IMU+60WN5" alt=""></div>
+<div class="adbar"><span class="pr">PR</span><br><a href="https://px.a8.net/svt/ejp?a8mat=4BESUB+80UQY2+4JVQ+6BU5T" rel="nofollow">
+<img border="0" width="728" height="90" alt="" src="https://www26.a8.net/svt/bgt?aid=261031043485&wid=164&eno=01&mid=s00000021239001063000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BESUB+80UQY2+4JVQ+6BU5T" alt=""></div>
+<header class="hero" style="min-height:44vh"><div class="in"><span class="kicker">JAPAN USED CAR RANKING</span>
+<h1>全国 中古車販売店<br>ランキング</h1>
+<p>Googleマップの評価と口コミを1店ずつ確認して厳選した、47都道府県別の中古車販売店ランキングです。お住まいの都道府県から探せます。</p>
+</div></header>
+<main class="wrap">
+<h2>北海道</h2>
+<div class="pgrid"><a class="pcard" href="https://tk-ramen.github.io/hokkaido-usedcar-ranking/"><b>北海道</b><span>中古車販売店ランキング</span></a></div>
+<h2>東北</h2>
+<div class="pgrid"><a class="pcard" href="https://tk-ramen.github.io/miyagi-usedcar-ranking/"><b>宮城県</b><span>中古車販売店ランキング</span></a></div>
+<h2>関東</h2>
+<div class="pgrid"><a class="pcard" href="https://tk-ramen.github.io/saitama-usedcar-ranking/"><b>埼玉県</b><span>中古車販売店ランキング</span></a><a class="pcard" href="https://tk-ramen.github.io/chiba-usedcar-ranking/"><b>千葉県</b><span>中古車販売店ランキング</span></a><a class="pcard" href="https://tk-ramen.github.io/tokyo-usedcar-ranking/"><b>東京都</b><span>中古車販売店ランキング</span></a><a class="pcard" href="https://tk-ramen.github.io/kanagawa-usedcar-ranking/"><b>神奈川県</b><span>中古車販売店ランキング</span></a></div>
+<h2>中部</h2>
+<div class="pgrid"><a class="pcard" href="https://tk-ramen.github.io/shizuoka-usedcar-ranking/"><b>静岡県</b><span>中古車販売店ランキング</span></a><a class="pcard" href="https://tk-ramen.github.io/aichi-usedcar-ranking/"><b>愛知県</b><span>中古車販売店ランキング</span></a></div>
+<h2>近畿</h2>
+<div class="pgrid"><a class="pcard" href="https://tk-ramen.github.io/osaka-usedcar-ranking/"><b>大阪府</b><span>中古車販売店ランキング</span></a><a class="pcard" href="https://tk-ramen.github.io/hyogo-usedcar-ranking/"><b>兵庫県</b><span>中古車販売店ランキング</span></a></div>
+<h2>九州・沖縄</h2>
+<div class="pgrid"><a class="pcard" href="https://tk-ramen.github.io/fukuoka-usedcar-ranking/"><b>福岡県</b><span>中古車販売店ランキング</span></a></div>
+<p class="note">【調査方法と免責】各都道府県ページの順位はおすすめ順であり、評価順ではありません。Google評価と口コミ件数は各ページに記載の確認日にGoogleマップで確認した実数です。掲載写真はすべてイメージ写真です。在庫・価格・営業時間は変動するため、来店前に各店舗へご確認ください。</p>
+</main>
+<footer><div class="wrap"><p>全国中古車販売店ランキング｜【広告について】本ページにはアフィリエイト広告（PR）が含まれます。</p></div></footer>
+</body></html>
